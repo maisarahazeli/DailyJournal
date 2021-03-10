@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Diary</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+
+    
+    <ion-item>
+      <ion-label position="floating">Title</ion-label>
+      <ion-input type="text" [(ngModel)]="post.name" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Note</ion-label>
+      <ion-input [(ngModel)]="post.message"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="primary" (click)="createPost(post)">
+      <ion-icon slot="start" name="send"></ion-icon>
+      Send
+    </ion-button>
+   </div>
+</ion-content>

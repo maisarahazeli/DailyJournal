@@ -1,0 +1,45 @@
+
+<ion-header>
+  <ion-toolbar> 
+    <ion-title ion-title class="ion-text-center">
+      Journal
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p class="ion-text-centre">
+  </p>
+
+<ion-grid-fixed>
+
+  <img class="img1" src="assets/6.jpg">
+
+  <ion-col size="10">
+    <ion-button [routerLink]="['/view-post']" expand="block" color="primary">
+      <ion-icon slot="end" name="journal-outline">
+      </ion-icon>
+      My Journal 
+    </ion-button>
+
+  </ion-col>
+  <ion-col size="6">
+    <ion-button [routerLink]="['/workout']" expand="block" color="primary">
+      <ion-icon slot="end" name="barbell-outline"></ion-icon>
+      Workout Inpirations
+    </ion-button>
+
+  </ion-col>
+  <ion-col size="6">
+    <ion-button [routerLink]="['/daycare']"  expand="block" color="primary">
+      <ion-icon slot="end" name="heart-outline"></ion-icon>
+      Period Day Care
+    </ion-button>
+  </ion-col>
+</ion-grid-fixed>
+  
+</ion-content>
+
+
+
+
